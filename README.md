@@ -97,3 +97,4 @@ sbatch PIPELINE_VNOWCHI.sh
 ## Acknowledgments
 
 ## Citation
+Daughtry, B. L., Rosenkrantz, J. L., Lazar N. H., Fei. S. S., Redmayne, N., Torkenczy, K. A., Adey, A., Gao, L., Park, B., Nevonen, K.A., Carbone, L., Chavez, S. L. (2018). Single-Cell Sequencing of Primate Preimplantation Embryos Reveals Chromosome Elimination Via Cellular Fragmentation and Blastomere Exclusion. bioRxiv.

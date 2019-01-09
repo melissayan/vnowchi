@@ -16,7 +16,7 @@ Detailed information regarding VNOWCHI and the CBS and HMM algorithms can be fou
 * [Authors](#authors)
 * [Acknowledgments](#acknowledgements)
 * [Citation](#citation)
-* [License](#license)
+
 
 ## Getting Started
 The scripts provided are tailored for use on [OHSU's exacloud](https://www.ohsu.edu/xd/research/research-cores/advanced-computing-center/exacloud.cfm) server using SLURM.  For help with SLURM, please refer to ACC's [tutorials](https://accdoc.ohsu.edu/exacloud/guide/getting-started/).

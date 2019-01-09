@@ -1,3 +1,5 @@
+![VNOWCHI](https://github.com/melissayan/vnowchi/blob/master/img/vnowchi.png)
+-----------------------------------------------------------------------------------------
 # Variable Non-Overlapping Window CBS and HMM Intersect (VNOWCHI): A Copy Number Variant Calling Pipeline
 -----------------------------------------------------------------------------------------
 [![R: v3.5.0](https://img.shields.io/badge/R-v3.5.0-198ce7.svg)](https://cran.rstudio.com/)  [![DOI:10.1101/241851 ](https://img.shields.io/badge/DOI-10.110/241851-70db70.svg)](https://doi.org/10.1101/241851)

@@ -76,7 +76,7 @@ sbatch PIPELINE_VNOWCHI.sh
 * Tabular summary for all embryos classified by ploidy and sex status based on samples
 
 ## Results:
-* Mapping summary statistics
+* Mapping summary statistics `VNOWCHI_Summary.txt`
 * Tabular summary of all individual samples CNV calls with embryo, blastomere, ploidy and sex classifications
 	* `CNV_<SE|PE>_<bin>.sampleSummary.txt`
 * Tabular summary of all embryos classified by ploidy and sex status

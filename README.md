@@ -41,3 +41,57 @@ To use scripts without SLURM, comment `srun` and `sbatch` commands and uncomment
     * GenomicRanges
     * dplyr
     * ggplot2
+
+### Installation
+Installation instructions can be found on the [Wiki Installation page](https://github.com/melissayan/vnowchi/wiki/Installation).
+
+### How to Use
+Detailed "How to Use" instructions are located on the [Wiki How to Use page](https://github.com/melissayan/vnowchi/wiki/How-to-Use).
+#### 1. Modify scripts with your directory information.
+#### 2. Copy fibroblast FASTQs and sample FASTQs to the following locations:
+```
+Fibroblast samples (5 scDNA-seq samples preferred):
+/your/working/dir/CopyNumberPipeline/results/FIBROBLASTS/FASTQ
+
+Single-ended samples:
+/your/working/dir/CopyNumberPipeline/results/fastq/SE
+
+Paired-ended samples:
+/your/working/dir/CopyNumberPipeline/results/fastq/PE
+```
+#### 3. Generate bins for the pipeline using FIBROBLAST data.
+```
+sbatch PIPELINE_bins.sh
+```
+#### 4. Run pipeline on actual data.
+```
+sbatch PIPELINE_VNOWCHI.sh
+```
+#### 5. Look at results:
+* CNV plots for all samples, includes all and individual chromosomes
+* Mapping summary statistics for VNOWCHI_summary.txt
+* Tabluar summary for all samples classified by ploidy and sex status
+* Tabular summary for all embryos classified by ploidy and sex status based on samples
+
+## Results:
+* Mapping summary statistics
+* Tabular summary of all individual samples CNV calls with embryo, blastomere, ploidy and sex classifications
+	* `CNV_<SE|PE>_<bin>.sampleSummary.txt`
+* Tabular summary of all embryos classified by ploidy and sex status
+	* `CNV_<SE|PE>_<bin>.embryoSummary.txt`
+* CNV plots for all samples by chromosome or by all chromosomes 
+	* `<sampleName>_<chromosome>.png`
+	* `<sampleName>_<all>.png`
+	
+<kbd><img src="https://github.com/melissayan/vnowchi/blob/master/img/samplePlot.png"></kbd>
+
+## Additional Notes 
+* Please note that R package dply will behave differently than intended if R package plyr is loaded. More info regarding the issue can be found [here](https://github.com/tidyverse/dplyr/issues/29) and [here](https://github.com/tidyverse/dplyr/issues/347).  Here's a possible solution from [Stack Overflow](https://stackoverflow.com/questions/22801153/dplyr-error-in-n-function-should-not-be-called-directly) if you get any errors. 
+* Might need to modify step 3 in `PIPELINE_bins.sh` and `PIPELINE_VNOWC.sh` to ensure script will accept the provided fastq file name format pattern
+* If trying to use Rscripts in Rstudio, some scripts have issues.  Ex. get_copy_number.R has no problems on server but does not work in RStudio, could be related to R version. 
+
+## Authors
+
+## Acknowledgments
+
+## Citation

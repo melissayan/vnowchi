@@ -89,12 +89,30 @@ sbatch PIPELINE_VNOWCHI.sh
 
 ## Additional Notes 
 * Please note that R package dply will behave differently than intended if R package plyr is loaded. More info regarding the issue can be found [here](https://github.com/tidyverse/dplyr/issues/29) and [here](https://github.com/tidyverse/dplyr/issues/347).  Here's a possible solution from [Stack Overflow](https://stackoverflow.com/questions/22801153/dplyr-error-in-n-function-should-not-be-called-directly) if you get any errors. 
-* Might need to modify step 3 in `PIPELINE_bins.sh` and `PIPELINE_VNOWC.sh` to ensure script will accept the provided fastq file name format pattern
+* Might need to modify step 3 in `PIPELINE_bins.sh` and `PIPELINE_VNOWCHI.sh` to ensure script will accept the provided fastq file name format pattern
 * If trying to use Rscripts in Rstudio, some scripts have issues.  Ex. get_copy_number.R has no problems on server but does not work in RStudio, could be related to R version. 
 
 ## Authors
+* **Melissa Yan** - extended the VNOWC pipeline to include CHI, classify samples/embryos, accommodate different genomes, and run on SLURM
+* [**Nathan Lazar**](https://github.com/nathanlazar) - original author of [Variable Non-Overlapping Window CBS (VNOWC)](https://github.com/nathanlazar/Oocyte_CN)
+* **Kristof Torkency** - original author of CBS/HMM Intersect (CHI) pipeline
 
 ## Acknowledgments
+This project would not be possible without the support from the Chavez Lab, Carbone Lab, Adey Lab, and the Biostatistics & Bioinformatics Core:
+* Chavez Lab:
+	* Brittany L. Daughtry
+	* Kelsey E. Brooks
+	* Jimi L. Rosenkrantz
+	* Shawn L. Chavez
+* [Carbone Lab](http://carbonelab.com/): 
+	* [Nathan H. Lazar](https://github.com/nathanlazar)
+	* Brett Davis
+	* Lucia Carbone
+* [Adey Lab](https://adeylab.org/andrew-adey/):
+	* Kristof A. Torkenczy
+	* Andrew Adey
+* Biostatistics & Bioinformatics Core
+	* Suzi S. Fei
 
 ## Citation
 Daughtry, B. L., Rosenkrantz, J. L., Lazar N. H., Fei. S. S., Redmayne, N., Torkenczy, K. A., Adey, A., Gao, L., Park, B., Nevonen, K.A., Carbone, L., Chavez, S. L. (2018). Single-Cell Sequencing of Primate Preimplantation Embryos Reveals Chromosome Elimination Via Cellular Fragmentation and Blastomere Exclusion. bioRxiv.

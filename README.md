@@ -99,7 +99,7 @@ sbatch PIPELINE_VNOWCHI.sh
 
 ## Acknowledgments
 This project would not be possible without the support from the Chavez Lab, Carbone Lab, Adey Lab, and the Biostatistics & Bioinformatics Core:
-* Chavez Lab:
+* [Chavez Lab](https://www.ohsu.edu/people/shawnchavez/afe058a49a4aac1f07559cb5b32c424a):
 	* Brittany L. Daughtry
 	* Kelsey E. Brooks
 	* Jimi L. Rosenkrantz

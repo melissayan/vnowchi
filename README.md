@@ -111,7 +111,7 @@ This project would not be possible without the support from the Chavez Lab, Carb
 * [Adey Lab](https://adeylab.org/andrew-adey/):
 	* Kristof A. Torkenczy
 	* Andrew Adey
-* Biostatistics & Bioinformatics Core
+* [Biostatistics & Bioinformatics Core](http://www.ohsu.edu/bbc)
 	* Suzi S. Fei
 
 ## Citation

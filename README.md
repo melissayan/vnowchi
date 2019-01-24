@@ -27,6 +27,7 @@ To use scripts without SLURM, comment `srun` and `sbatch` commands and uncomment
 
 ### Prerequisites
 * Linux environment
+* Java 8 ([How to install Java](https://github.com/in28minutes/getting-started-in-5-steps)) for Trimmomatic
 * The following software tools installed:
     * FastQC 0.10.1 
     * Trimmomatic 0.35
